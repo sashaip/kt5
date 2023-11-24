@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+.cars{
+	width: 100%;
+	height: 800px;
+	background-color: rgb(211, 157, 247);
+	position: relative;
+}
+@keyframes animateCar {
+	0% {
+		left: 0;
+	}
+	90% {
+		left: calc(100vw - 250px);
+	}
+	100% {
+		left: calc(100vw - 250px);
+	}
+}
+
+.car {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 200px;
+	height: fit-content;
+	top: 350px;
+	animation: animateCar infinite 10s;
+}
+.wheel {
+	background-color: rgb(12, 116, 214);
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+}
+.wheels {
+	width: 200px;
+	height: fit-content;
+	position: relative;
+	top: -30px;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.block-car {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.car-kvadra{
+	width: 150px;
+	height: 80px;
+	background-color: rgb(211, 159, 15);
+	position: relative;
+	top: 8px;
+	z-index: 0;
+}
+.car-pramoyg {
+	width: 220px;
+	height: 80px;
+	background-color: rgb(95, 117, 82);
+	z-index: 2;
+}
